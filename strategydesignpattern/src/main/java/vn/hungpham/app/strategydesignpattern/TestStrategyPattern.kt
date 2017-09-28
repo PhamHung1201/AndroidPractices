@@ -1,10 +1,13 @@
-package vn.hungpham.app.androidpratices.strategy
+package vn.hungpham.app.strategydesignpattern
 
-/**
- * Created on 9/28/17.
- */
-class TestStrategyPattern {
-    fun main(){
+import android.support.v7.app.AppCompatActivity
+import android.os.Bundle
+
+class TestStrategyPattern : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_test_strategy_pattern)
         var formatter: TextFormatterStrategy = CapTextFormatterConcreteStrategy()
         var editor: TextEditor = TextEditor(formatter)
         editor.publishText("Testing text in caps formatter")

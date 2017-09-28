@@ -1,4 +1,4 @@
-package vn.hungpham.app.androidpratices.strategy
+package vn.hungpham.app.strategydesignpattern
 
 /**
  * Created on 9/28/17.
