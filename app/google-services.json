@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "816137371376",
+    "firebase_url": "https://fir-tutorial-859d6.firebaseio.com",
+    "project_id": "fir-tutorial-859d6",
+    "storage_bucket": "fir-tutorial-859d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816137371376:android:98b63fe01b5a6269",
+        "android_client_info": {
+          "package_name": "vn.hungpham.app.androidpratices"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "816137371376-hk7d18tqh9kl6olie4gdbmf7sgqhh11t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDum0D1Twty7XKOu6c3PupGZu7G2j4b9AI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

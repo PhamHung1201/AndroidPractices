@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Notifications</string>
+    <string name="noti_channel_default">Default</string>
+    <string name="noti_channel_second">Second</string>
+    <string name="noti_group_logic">Logic</string>
+    <string name="noti_group_business">Business</string>
+</resources>
