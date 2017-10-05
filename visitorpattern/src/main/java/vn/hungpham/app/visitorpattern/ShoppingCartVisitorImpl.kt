@@ -5,14 +5,13 @@ package vn.hungpham.app.visitorpattern
  */
 class ShoppingCartVisitorImpl: ShoppingCartVisitor {
     override fun visit(book: Book): Int {
-        var cost = 0
+        var cost: Int
         //apply 5$ discount if book price is greater than 50
         if (book.price > 50)
             cost = book.price - 5
         else
             cost = book.price
         return cost
-
     }
 
     override fun visit(fruit: Fruit): Int {

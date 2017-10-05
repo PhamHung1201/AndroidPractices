@@ -10,7 +10,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         val items: MutableList<ItemElement> = mutableListOf()
         items.add(Book(20, "1234"))
         items.add(Book(100, "5678"))
@@ -19,6 +18,11 @@ class MainActivity : AppCompatActivity() {
 
         title = calculateTitle(items)+"\n"+"Total Cost= "+ calculatePrice(items)
         tvMessage.text = title
+        Codiliti.solution(15)
+        Codiliti.solution(1041)
+        Codiliti.solution(100000)
+        Codiliti.solution(1000000)
+        Codiliti.solution(1000000000)
     }
 
     private fun calculatePrice(items: MutableList<ItemElement>): Int{

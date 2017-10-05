@@ -1,1 +1,1 @@
-include ':app', ':strategydesignpattern', ':notifications', ':visitorpattern'
+include ':app', ':strategydesignpattern', ':notifications', ':visitorpattern', ':dependency_injection_pattern'
