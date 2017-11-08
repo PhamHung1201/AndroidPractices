@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BluetoothExample</string>
+    <string name="title_activity_bluetooth_main">BluetoothMain</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="msg_welcome">Welcom Bluetooth Example.\nSelect features in left menu to discovery</string>
+</resources>

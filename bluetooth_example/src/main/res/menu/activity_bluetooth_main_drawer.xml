@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_basic"
+            android:icon="@drawable/ic_bluetooth"
+            android:title="On/Off Bluetooth" />
+        <item
+            android:id="@+id/nav_scan"
+            android:icon="@drawable/ic_bluetooth_searching"
+            android:title="Scan" />
+        <item
+            android:id="@+id/nav_connect"
+            android:icon="@drawable/ic_bluetooth_connected"
+            android:title="Connect other device" />
+        <item
+            android:id="@+id/nav_transfer"
+            android:icon="@drawable/ic_swap_horiz"
+            android:title="Transfer Data" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_source"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Source" />
+        </menu>
+    </item>
+
+</menu>
