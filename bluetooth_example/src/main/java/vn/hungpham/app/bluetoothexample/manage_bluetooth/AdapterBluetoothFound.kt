@@ -18,11 +18,19 @@ class AdapterBluetoothFound(val datas: MutableList<BluetoothDevice?>): RecyclerV
     override fun onBindViewHolder(holder: BluetoothFoundHolder, position: Int) {
         holder is BluetoothFoundHolder
         holder.tvName.text = datas.get(position)?.name
-        holder.tvAddress.text = datas.get(position)?.address
+        when (datas.get(position)?.bondState){
+            BluetoothDevice.BOND_BONDED -> "Connected"
+            BluetoothDevice.BOND_BONDING -> "Connecting"
+            BluetoothDevice.BOND_NONE -> "No Connect"
+        }
+        holder.tvAddress.text = when (datas.get(position)?.bondState){
+            BluetoothDevice.BOND_BONDED -> "Connected"
+            BluetoothDevice.BOND_BONDING -> "Connecting"
+            else -> "No Connect"
+        }
     }
 
     override fun getItemCount(): Int = datas.size
-
 
     inner class BluetoothFoundHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         val tvName: AppCompatTextView by lazy { itemView.findViewById<AppCompatTextView>(R.id.tvName) }

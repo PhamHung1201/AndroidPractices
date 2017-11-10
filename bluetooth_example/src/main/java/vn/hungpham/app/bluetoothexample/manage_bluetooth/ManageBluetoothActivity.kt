@@ -36,9 +36,7 @@ class ManageBluetoothActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         if (bluetoothAdapter.isEnabled.not()){
-            val discoverableIntent = Intent(BluetoothAdapter.ACTION_REQUEST_DISCOVERABLE)
-            discoverableIntent.putExtra(BluetoothAdapter.EXTRA_DISCOVERABLE_DURATION, 300)
-            startActivityForResult(discoverableIntent, 101)
+            requestDiscoverable()
         }else{
             setupBluetooth()
         }
@@ -54,8 +52,6 @@ class ManageBluetoothActivity : AppCompatActivity() {
             bluetoothAdapter.cancelDiscovery()
         bluetoothAdapter.startDiscovery()
     }
-
-
 
     override fun onPause() {
         super.onPause()
@@ -78,12 +74,12 @@ class ManageBluetoothActivity : AppCompatActivity() {
 
     private fun setupBluetooth(){
 
-
         swBluetooth.isChecked = true
 
         swBluetooth.setOnCheckedChangeListener { compoundButton, isChecked ->
             if (isChecked){
                 bluetoothAdapter.enable()
+                requestDiscoverable()
             }else{
                 bluetoothAdapter.disable()
             }
@@ -139,4 +135,11 @@ class ManageBluetoothActivity : AppCompatActivity() {
         }
         adapterFound.notifyDataSetChanged()
     }
+
+    private fun requestDiscoverable(){
+        val discoverableIntent = Intent(BluetoothAdapter.ACTION_REQUEST_DISCOVERABLE)
+        discoverableIntent.putExtra(BluetoothAdapter.EXTRA_DISCOVERABLE_DURATION, 3600)
+        startActivityForResult(discoverableIntent, 101)
+    }
 }
+

@@ -1,1 +1,1 @@
-include ':app', ':strategydesignpattern', ':notifications', ':visitorpattern', ':dependency_injection_pattern', ':layoutbehavior', ':customviews', ':bluetooth_example'
+include ':app', ':strategydesignpattern', ':notifications', ':visitorpattern', ':dependency_injection_pattern', ':layoutbehavior', ':customviews', ':bluetooth_example', ':factory_design_pattern'

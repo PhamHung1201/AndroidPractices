@@ -51,10 +51,6 @@ class ScanActivity : AppCompatActivity() {
             }
         }
 
-
-
-
-
         btnScan.setOnClickListener {
             if (bluetoothAdapter.isDiscovering)
                 bluetoothAdapter.cancelDiscovery()
